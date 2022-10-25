@@ -22,14 +22,14 @@ commands:
   - id: build
     exec:
       component: tools
-      workingDir: ${PROJECTS_ROOT}/golang-health-check
+      workingDir: /projects/golang-health-check
       commandLine: go build
       group:
         kind: build
   - id: run
     exec:
       component: tools
-      workingDir: ${PROJECTS_ROOT}/golang-health-check
+      workingDir: /projects/golang-health-check
       commandLine: ./golang-health-check
       group:
         kind: run
