@@ -1,7 +1,7 @@
 ---
 schemaVersion: 2.1.0
 metadata:
-  name: golang
+  name: first-go-environment
 components:
   - name: tools
     container:
@@ -23,7 +23,7 @@ commands:
     exec:
       component: tools
       workingDir: ${PROJECTS_ROOT}/go-gopher-cli
-      commandLine: go build -o bin/go-gopher-cli
+      commandLine: go build
       group:
         kind: build
   - id: run
